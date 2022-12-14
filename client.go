@@ -42,7 +42,7 @@ func init() {
 func main() {
 	ctab := crontab.New()
 
-	conn, err := grpc.Dial("0.0.0.0:4444", grpc.WithInsecure())
+	conn, err := grpc.Dial("discord-bot:4444", grpc.WithInsecure())
 	if err != nil {
 		log.Fatalf("could not connect to server %v", err)
 	}
